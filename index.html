@@ -36,6 +36,41 @@
       opacity: 0.9;
     }
 
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #f8f7f0;
+      padding: 40px 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      max-width: 220px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      color: #136a41;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
     section {
       max-width: 900px;
       margin: 50px auto;
@@ -97,6 +132,9 @@
       header h1 {
         font-size: 1.8rem;
       }
+      .service-card {
+        max-width: 100%;
+      }
       section {
         margin: 20px;
       }
@@ -108,6 +146,29 @@
     <h1>Bombons Finos da Amazônia</h1>
     <p>Luxo, sabor e tradição do coração da floresta.</p>
   </header>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>🍫 Chocolates Finos</h3>
+      <p>Feitos com cacau amazônico premium e receitas exclusivas.</p>
+    </div>
+    <div class="service-card">
+      <h3>🎁 Presentes Corporativos</h3>
+      <p>Kits personalizados para empresas que valorizam o sabor e a elegância.</p>
+    </div>
+    <div class="service-card">
+      <h3>🌿 Bombons Artesanais</h3>
+      <p>Sabores autênticos da floresta, feitos à mão com ingredientes locais.</p>
+    </div>
+    <div class="service-card">
+      <h3>🧺 Cestas Personalizadas</h3>
+      <p>Composições exclusivas para datas especiais e eventos de luxo.</p>
+    </div>
+    <div class="service-card">
+      <h3>🕯️ Linha Gourmet</h3>
+      <p>Delícias finas e sofisticadas para os paladares mais exigentes.</p>
+    </div>
+  </section>
 
   <section>
     <h2>📜 Informações de Registro</h2>
